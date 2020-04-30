@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my angel",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "No thank you"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "No I am done"
+          ]
+        },
+        {
+          "name": "FeelingIntent",
+          "slots": [
+            {
+              "name": "feeling",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "today {feeling}",
+            "my day {feeling}",
+            "Today I was {feeling}",
+            "I\u0027m {feeling}",
+            "I\u0027m feeling {feeling}",
+            "Today I am {feeling}",
+            "I was feeling {feeling}",
+            "I am feeling {feeling}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ReachOutIntent",
+          "slots": [
+            {
+              "name": "person",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Yes I would like to reach out to {person}",
+            "I would like to reach out to {person}",
+            "I would not like to reach out ",
+            "I would like to talk to {person}"
+          ]
+        },
+        {
+          "name": "InterventionIntent",
+          "slots": [],
+          "samples": [
+            "i wish i was dead",
+            "i want to die",
+            "suicidal",
+            "suicide"
+          ]
+        },
+        {
+          "name": "TreatmentLogIntent",
+          "slots": [
+            {
+              "name": "description",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "My treatments {description}",
+            "My treatment {description}",
+            "treatments {description}",
+            "treatment {description}"
+          ]
+        },
+        {
+          "name": "MedicationLogIntent",
+          "slots": [
+            {
+              "name": "description",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Yes when is my medication {description}",
+            "When is my medication {description}",
+            "meds {description}",
+            "med {description}",
+            "medication {description}",
+            "medications {description}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "10"
+}
